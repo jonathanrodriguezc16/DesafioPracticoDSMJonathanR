@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PromedioActivity">
@@ -14,4 +15,54 @@
         android:text="Promedio"
         tools:layout_editor_absoluteX="279dp"
         tools:layout_editor_absoluteY="128dp" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del Estudiante"/>
+    <EditText
+        android:id="@+id/etNota1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nota 1 (0-10)"
+        android:inputType="numberDecimal"/>
+    <EditText
+        android:id="@+id/etNota2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nota 2 (0-10)"
+        android:inputType="numberDecimal" />
+    <EditText
+        android:id="@+id/etNota3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nota 3 (0-10)"
+        android:inputType="numberDecimal" />
+    <EditText
+        android:id="@+id/etNota4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nota 4 (0-10)"
+        android:inputType="numberDecimal" />
+    <EditText
+        android:id="@+id/etNota5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nota 5 (0-10)"
+        android:inputType="numberDecimal" />
+    <Button
+        android:id="@+id/btnCalcularPromedio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Promedio" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aquí aparecerá el resultado"
+        android:textSize="18sp"
+        android:paddingTop="16dp"/>
+
 </LinearLayout>
