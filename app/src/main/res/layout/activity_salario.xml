@@ -12,8 +12,35 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="40sp"
         android:text="Salario"
 
         tools:layout_editor_absoluteX="102dp"
         tools:layout_editor_absoluteY="115dp" />
+    <EditText
+        android:id="@+id/etNombreEmpleado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del empleado" />
+    <EditText
+        android:id="@+id/etSalarioBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Salario base"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnCalcularSalario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Descuentos" />
+    <TextView
+        android:id="@+id/tvResultadoSalario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aquí aparecerá el resultado"
+        android:textSize="18sp"
+        android:paddingTop="16dp"/>
+
+
 </LinearLayout>
