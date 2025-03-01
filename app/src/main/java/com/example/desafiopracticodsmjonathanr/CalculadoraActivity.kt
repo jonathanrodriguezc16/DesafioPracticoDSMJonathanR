@@ -42,17 +42,15 @@ class CalculadoraActivity : AppCompatActivity() {
     }
 
     private fun calcular() {
-        // Validar que haya texto en Operando1
+
         if (etOperando1.text.isNullOrEmpty()) {
             tvResultadoCalc.text = "Ingresa el primer operando"
             return
         }
 
-        // Operando 2 podría no ser necesario si hacemos raíz cuadrada
+
         val operacion = spinnerOperaciones.selectedItem.toString()
         val num1 = etOperando1.text.toString().toDouble()
-
-        // Para raíz cuadrada, podemos ignorar el segundo operando
         val num2 = if (!etOperando2.text.isNullOrEmpty()) etOperando2.text.toString().toDouble() else 0.0
 
         val resultado = when (operacion) {
@@ -69,7 +67,7 @@ class CalculadoraActivity : AppCompatActivity() {
             }
             "Exponente" -> Math.pow(num1, num2)
             "Raíz Cuadrada" -> {
-                // Para raíz cuadrada usaremos solo num1
+                // Para raíz Cuadrada solo num1
                 if (num1 < 0) {
                     tvResultadoCalc.text = "Error: raíz de número negativo."
                     return
