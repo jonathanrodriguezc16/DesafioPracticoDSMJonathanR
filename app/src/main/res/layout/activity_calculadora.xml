@@ -6,20 +6,38 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_color"
     tools:context=".CalculadoraActivity">
 
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="110sp"
+        android:layout_marginTop="20sp"
+        android:layout_height="40sp"
+        android:text="Regresar" />
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:text="Calculadora" />
+        android:text="@string/Calculadora"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+
+        android:text="Ingrese los siguientes datos y selecciona la operacion que desea realizar"
+        android:textSize="20sp"/>
 
 
     <EditText
         android:id="@+id/etOperando1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/accentColor"
         android:hint="Operando 1"
         android:inputType="numberDecimal" />
 
@@ -29,13 +47,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Operando 2"
+        android:background="@color/accentColor"
         android:inputType="numberDecimal" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+
+        android:text="Seleccione la operacion que desea Realizar:"
+        android:textSize="18sp"/>
 
 
     <Spinner
         android:id="@+id/spinnerOperaciones"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:background="@color/accentColor"
+        />
 
 
     <Button
@@ -50,8 +79,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Resultado"
+        android:background="@color/white"
+        android:layout_gravity="center"
         android:textSize="18sp"
-        android:paddingTop="16dp"/>
+        />
 
 
 </LinearLayout>

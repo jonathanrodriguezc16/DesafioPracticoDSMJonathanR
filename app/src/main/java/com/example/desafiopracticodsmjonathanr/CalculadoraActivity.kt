@@ -18,6 +18,7 @@ class CalculadoraActivity : AppCompatActivity() {
     lateinit var spinnerOperaciones:Spinner
     lateinit var btnCalcular:Button
     lateinit var tvResultadoCalc:TextView
+    lateinit var btnRegresar: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +29,7 @@ class CalculadoraActivity : AppCompatActivity() {
         etOperando2 = findViewById(R.id.etOperando2)
         spinnerOperaciones = findViewById(R.id.spinnerOperaciones)
         btnCalcular = findViewById(R.id.btnCalcular)
+        btnRegresar = findViewById(R.id.btnRegresar)
         tvResultadoCalc = findViewById(R.id.tvResultadoCalc)
 
         val operaciones = listOf("Suma", "Resta", "Multiplicación", "División", "Exponente", "Raíz Cuadrada")
@@ -38,7 +40,9 @@ class CalculadoraActivity : AppCompatActivity() {
         btnCalcular.setOnClickListener {
             calcular()
         }
-
+        btnRegresar.setOnClickListener {
+            finish()
+        }
     }
 
     private fun calcular() {

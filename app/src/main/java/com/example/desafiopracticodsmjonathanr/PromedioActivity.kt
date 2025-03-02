@@ -19,6 +19,7 @@ class PromedioActivity : AppCompatActivity() {
     lateinit var etNota5:EditText
     lateinit var btnCalcular:Button
     lateinit var tvResultado:TextView
+    lateinit var btnRegresar: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,11 +35,17 @@ class PromedioActivity : AppCompatActivity() {
         etNota4 = findViewById(R.id.etNota4)
         etNota5 = findViewById(R.id.etNota5)
         btnCalcular = findViewById(R.id.btnCalcularPromedio)
+        btnRegresar = findViewById(R.id.btnRegresar)
         tvResultado = findViewById(R.id.tvResultado)
         btnCalcular.setOnClickListener {
             calcularPromedio()
 
         }
+
+        btnRegresar.setOnClickListener {
+            finish()
+        }
+
     }
     private fun calcularPromedio() {
         val nombre = etNombre.text.toString()

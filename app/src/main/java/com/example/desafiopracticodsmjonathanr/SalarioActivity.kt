@@ -15,6 +15,7 @@ class SalarioActivity : AppCompatActivity() {
     lateinit var etSalarioBase:EditText
     lateinit var btnCalcularSalario:Button
     lateinit var tvResultadoSalario:TextView
+    lateinit var btnRegresar: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,11 +26,15 @@ class SalarioActivity : AppCompatActivity() {
         etSalarioBase = findViewById(R.id.etSalarioBase)
         btnCalcularSalario = findViewById(R.id.btnCalcularSalario)
         tvResultadoSalario = findViewById(R.id.tvResultadoSalario)
+        btnRegresar = findViewById(R.id.btnRegresar)
 
         btnCalcularSalario.setOnClickListener {
             calcularSalario()
         }
 
+        btnRegresar.setOnClickListener {
+            finish()
+        }
     }
 
     private fun calcularSalario() {

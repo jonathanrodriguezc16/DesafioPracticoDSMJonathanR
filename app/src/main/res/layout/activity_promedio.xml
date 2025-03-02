@@ -6,18 +6,36 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_color"
     tools:context=".PromedioActivity">
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="110sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="20sp"
+        android:text="Regresar" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Promedio"
+        android:text="@string/Promedio"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="128dp" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:text="Ingresa los siguientes datos para calcular el promedio:"
+        android:textSize="20sp"
         tools:layout_editor_absoluteX="279dp"
         tools:layout_editor_absoluteY="128dp" />
 
     <EditText
         android:id="@+id/etNombre"
+        android:layout_marginTop="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nombre del Estudiante"/>
@@ -55,14 +73,20 @@
         android:id="@+id/btnCalcularPromedio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calcular Promedio" />
+        android:text="Calcular Promedio"
+
+        />
 
     <TextView
         android:id="@+id/tvResultado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Aquí aparecerá el resultado"
-        android:textSize="18sp"
-        android:paddingTop="16dp"/>
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:layout_gravity="center"
+
+
+        />
 
 </LinearLayout>

@@ -6,21 +6,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/background_color"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_marginTop="20sp"
+        android:textSize="20sp" />
+
 
     <Button
         android:id="@+id/btnPromedio"
+        android:layout_marginTop="60sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="@string/Promedio"
         tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="170dp" />
+        tools:layout_editor_absoluteY="170dp"
+
+        />
 
     <Button
         android:id="@+id/btnSalario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="@string/Salario"
         tools:layout_editor_absoluteX="128dp"
         tools:layout_editor_absoluteY="241dp" />
 
@@ -28,7 +41,7 @@
         android:id="@+id/btnCalculadora"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="@string/Calculadora"
         tools:layout_editor_absoluteX="128dp"
         tools:layout_editor_absoluteY="331dp" />
 

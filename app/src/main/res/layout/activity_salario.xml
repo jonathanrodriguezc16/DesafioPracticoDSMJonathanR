@@ -6,15 +6,33 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_color"
     tools:context=".SalarioActivity">
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="110sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="20sp"
+        android:text="Regresar" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="40sp"
-        android:text="Salario"
+        android:text="@string/Salario"
 
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Ingrese los siguientes datos para calcular el Salario neto"
+        android:layout_marginTop="20sp"
         tools:layout_editor_absoluteX="102dp"
         tools:layout_editor_absoluteY="115dp" />
     <EditText
@@ -40,7 +58,9 @@
         android:layout_height="wrap_content"
         android:text="Aquí aparecerá el resultado"
         android:textSize="18sp"
-        android:paddingTop="16dp"/>
+        android:background="@color/white"
+        android:layout_gravity="center"
+        />
 
 
 </LinearLayout>
